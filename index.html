@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>John Anthony Pedrozo's Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('photo79.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #00aced;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    section {
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .photo-gallery a img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .video-gallery video {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      color: #00aced;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00aced;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .video-gallery video {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Welcome to John Anthony Pedrozo's Page</h1>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#bio">Bio</a>
+      <a href="#motto">Motto</a>
+      <a href="#goals">Goals</a>
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#photos">Photos</a>
+      <a href="#contact">Contact</a>
+      <a href="#cv">CV</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is <strong>John Anthony Pedrozo</strong>. I'm 21 years old. I am from Baguio City and have a lifelong goal of serving my country as a soldier in the army.</p>
+    </section>
+
+    <section id="bio">
+      <h2>Bio</h2>
+      <p>I love capturing random moments, especially the beauty of nature through my lens. I also enjoy taking photos of cars, especially vintage and old-school models like JDM.</p>
+    </section>
+
+    <section id="motto">
+      <h2 style="text-align:center;">My Mottos</h2>
+      <p style="text-align:center; font-style: italic; font-size: 1.2em; color: #cccccc;">
+    "Please Lord, help me get one more." – Desmond Doss, <em>Hacksaw Ridge</em>
+  </p>
+  <p style="text-align:center; font-style: italic; font-size: 1.2em; color: #cccccc;">
+    "THOUGH HE SLAY ME, YET I WILL TRUST HIM." – Job 13:15
+  </p>
+</section>
+
+<section id="goals">
+      <h2 style="text-align: center;">My Life Goals</h2>
+      <ul style="max-width: 600px; margin: auto; list-style-type: square; font-size: 1.1em;">
+        <li>Serve the country as a dedicated soldier in the army</li>
+        <li>Capture the world through photography</li>
+        <li>Promote discipline, courage, and compassion</li>
+        <li>Continue growing and improving myself every day</li>
+      </ul>
+    </section>
+
+    <section id="music">
+      <h2>My Music</h2>
+      <p>
+        <a href="https://open.spotify.com/playlist/5SVTclPCSrmrjD9aIrFZGY?si=Q7ueuhf8RNS98zB9ywljKQ&pi=YgoAzo4WS0eBu" target="_blank">
+          🎵 Listen to my Spotify Playlist
+        </a>
+      </p>
+    </section>
+
+    <section id="videos">
+      <h2>My Videos</h2>
+      <div class="video-gallery">
+        <video src="video1.mp4" controls></video>
+        <video src="video2.mp4" controls></video>
+        <video src="video3.mp4" controls></video>
+        <video src="video4.mp4" controls></video>
+        <video src="video5.mp4" controls></video>
+      </div>
+    </section>
+
+    <section id="photos">
+  <h2>My Photos</h2>
+  <div class="photo-gallery">
+    <a href="photo1.jpg" data-lightbox="gallery" data-title="Photo 1"><img src="photo1.jpg" alt="Photo 1"></a>
+    <a href="photo2.jpg" data-lightbox="gallery" data-title="Photo 2"><img src="photo2.jpg" alt="Photo 2"></a>
+    <a href="photo3.jpg" data-lightbox="gallery" data-title="Photo 3"><img src="photo3.jpg" alt="Photo 3"></a>
+    <a href="photo4.jpg" data-lightbox="gallery" data-title="Photo 4"><img src="photo4.jpg" alt="Photo 4"></a>
+    <a href="photo5.jpg" data-lightbox="gallery" data-title="Photo 5"><img src="photo5.jpg" alt="Photo 5"></a>
+    <a href="photo6.jpg" data-lightbox="gallery" data-title="Photo 6"><img src="photo6.jpg" alt="Photo 6"></a>
+    <a href="photo7.jpg" data-lightbox="gallery" data-title="Photo 7"><img src="photo7.jpg" alt="Photo 7"></a>
+    <a href="photo8.jpg" data-lightbox="gallery" data-title="Photo 8"><img src="photo8.jpg" alt="Photo 8"></a>
+    <a href="photo9.jpg" data-lightbox="gallery" data-title="Photo 9"><img src="photo9.jpg" alt="Photo 9"></a>
+    <a href="photo10.jpeg" data-lightbox="gallery" data-title="Photo 10"><img src="photo10.jpeg" alt="Photo 10"></a>
+    <a href="photo11.jpeg" data-lightbox="gallery" data-title="Photo 11"><img src="photo11.jpeg" alt="Photo 11"></a>
+    <a href="photo12.jpeg" data-lightbox="gallery" data-title="Photo 12"><img src="photo12.jpeg" alt="Photo 12"></a>
+    <a href="photo13.jpeg" data-lightbox="gallery" data-title="Photo 13"><img src="photo13.jpeg" alt="Photo 13"></a>
+    <a href="photo14.jpeg" data-lightbox="gallery" data-title="Photo 14"><img src="photo14.jpeg" alt="Photo 14"></a>
+    <a href="photo15.jpeg" data-lightbox="gallery" data-title="Photo 15"><img src="photo15.jpeg" alt="Photo 15"></a>
+    <a href="photo16.jpeg" data-lightbox="gallery" data-title="Photo 16"><img src="photo16.jpeg" alt="Photo 16"></a>
+    <a href="photo17.jpeg" data-lightbox="gallery" data-title="Photo 17"><img src="photo17.jpeg" alt="Photo 17"></a>
+    <a href="photo18.jpeg" data-lightbox="gallery" data-title="Photo 18"><img src="photo18.jpeg" alt="Photo 18"></a>
+    <a href="photo19.jpeg" data-lightbox="gallery" data-title="Photo 19"><img src="photo19.jpeg" alt="Photo 19"></a>
+    <a href="photo20.jpeg" data-lightbox="gallery" data-title="Photo 20"><img src="photo20.jpeg" alt="Photo 20"></a>
+    <a href="photo21.jpeg" data-lightbox="gallery" data-title="Photo 21"><img src="photo21.jpeg" alt="Photo 21"></a>
+    <a href="photo22.jpeg" data-lightbox="gallery" data-title="Photo 22"><img src="photo22.jpeg" alt="Photo 22"></a>
+    <a href="photo23.jpeg" data-lightbox="gallery" data-title="Photo 23"><img src="photo23.jpeg" alt="Photo 23"></a>
+    <a href="photo24.jpeg" data-lightbox="gallery" data-title="Photo 24"><img src="photo24.jpeg" alt="Photo 24"></a>
+    <a href="photo25.jpeg" data-lightbox="gallery" data-title="Photo 25"><img src="photo25.jpeg" alt="Photo 25"></a>
+    <a href="photo26.jpeg" data-lightbox="gallery" data-title="Photo 26"><img src="photo26.jpeg" alt="Photo 26"></a>
+    <a href="photo27.jpeg" data-lightbox="gallery" data-title="Photo 27"><img src="photo27.jpeg" alt="Photo 27"></a>
+    <a href="photo28.jpeg" data-lightbox="gallery" data-title="Photo 28"><img src="photo28.jpeg" alt="Photo 28"></a>
+    <a href="photo29.jpeg" data-lightbox="gallery" data-title="Photo 29"><img src="photo29.jpeg" alt="Photo 29"></a>
+    <a href="photo30.jpeg" data-lightbox="gallery" data-title="Photo 30"><img src="photo30.jpeg" alt="Photo 30"></a>
+    <a href="photo31.jpeg" data-lightbox="gallery" data-title="Photo 31"><img src="photo31.jpeg" alt="Photo 31"></a>
+    <a href="photo32.jpeg" data-lightbox="gallery" data-title="Photo 32"><img src="photo32.jpeg" alt="Photo 32"></a>
+    <a href="photo33.jpeg" data-lightbox="gallery" data-title="Photo 33"><img src="photo33.jpeg" alt="Photo 33"></a>
+    <a href="photo34.jpg" data-lightbox="gallery" data-title="Photo 34"><img src="photo34.jpg" alt="Photo 34"></a>
+    <a href="photo35.jpg" data-lightbox="gallery" data-title="Photo 35"><img src="photo35.jpg" alt="Photo 35"></a>
+    <a href="photo36.jpg" data-lightbox="gallery" data-title="Photo 36"><img src="photo36.jpg" alt="Photo 36"></a>
+    <a href="photo37.jpg" data-lightbox="gallery" data-title="Photo 37"><img src="photo37.jpg" alt="Photo 37"></a>
+    <a href="photo38.jpg" data-lightbox="gallery" data-title="Photo 38"><img src="photo38.jpg" alt="Photo 38"></a>
+    <a href="photo39.jpg" data-lightbox="gallery" data-title="Photo 39"><img src="photo39.jpg" alt="Photo 39"></a>
+    <a href="photo40.jpg" data-lightbox="gallery" data-title="Photo 40"><img src="photo40.jpg" alt="Photo 40"></a>
+    <a href="photo41.jpg" data-lightbox="gallery" data-title="Photo 41"><img src="photo41.jpg" alt="Photo 41"></a>
+    <a href="photo42.jpg" data-lightbox="gallery" data-title="Photo 42"><img src="photo42.jpg" alt="Photo 42"></a>
+    <a href="photo43.jpg" data-lightbox="gallery" data-title="Photo 43"><img src="photo43.jpg" alt="Photo 43"></a>
+    <a href="photo44.jpg" data-lightbox="gallery" data-title="Photo 44"><img src="photo44.jpg" alt="Photo 44"></a>
+    <a href="photo45.jpg" data-lightbox="gallery" data-title="Photo 45"><img src="photo45.jpg" alt="Photo 45"></a>
+    <a href="photo46.jpg" data-lightbox="gallery" data-title="Photo 46"><img src="photo46.jpg" alt="Photo 46"></a>
+    <a href="photo47.jpg" data-lightbox="gallery" data-title="Photo 47"><img src="photo47.jpg" alt="Photo 47"></a>
+    <a href="photo48.jpg" data-lightbox="gallery" data-title="Photo 48"><img src="photo48.jpg" alt="Photo 48"></a>
+    <a href="photo49.jpeg" data-lightbox="gallery" data-title="Photo 49"><img src="photo49.jpeg" alt="Photo 49"></a>
+    <a href="photo50.jpg" data-lightbox="gallery" data-title="Photo 50"><img src="photo50.jpg" alt="Photo 50"></a>
+    <a href="photo51.jpeg" data-lightbox="gallery" data-title="Photo 51"><img src="photo51.jpeg" alt="Photo 51"></a>
+    <a href="photo52.jpeg" data-lightbox="gallery" data-title="Photo 52"><img src="photo52.jpeg" alt="Photo 52"></a>
+    <a href="photo53.jpeg" data-lightbox="gallery" data-title="Photo 53"><img src="photo53.jpeg" alt="Photo 53"></a>
+    <a href="photo54.jpeg" data-lightbox="gallery" data-title="Photo 54"><img src="photo54.jpeg" alt="Photo 54"></a>
+    <a href="photo55.jpeg" data-lightbox="gallery" data-title="Photo 55"><img src="photo55.jpeg" alt="Photo 55"></a>
+    <a href="photo56.jpeg" data-lightbox="gallery" data-title="Photo 56"><img src="photo56.jpeg" alt="Photo 56"></a>
+    <a href="photo57.jpeg" data-lightbox="gallery" data-title="Photo 57"><img src="photo57.jpeg" alt="Photo 57"></a>
+    <a href="photo58.jpeg" data-lightbox="gallery" data-title="Photo 58"><img src="photo58.jpeg" alt="Photo 58"></a>
+    <a href="photo59.jpg" data-lightbox="gallery" data-title="Photo 59"><img src="photo59.jpg" alt="Photo 59"></a>
+    <a href="photo60.jpg" data-lightbox="gallery" data-title="Photo 60"><img src="photo60.jpg" alt="Photo 60"></a>
+    <a href="photo61.jpg" data-lightbox="gallery" data-title="Photo 61"><img src="photo61.jpg" alt="Photo 61"></a>
+    <a href="photo62.jpg" data-lightbox="gallery" data-title="Photo 62"><img src="photo62.jpg" alt="Photo 62"></a>
+    <a href="photo63.jpg" data-lightbox="gallery" data-title="Photo 63"><img src="photo63.jpg" alt="Photo 63"></a>
+    <a href="photo64.jpg" data-lightbox="gallery" data-title="Photo 64"><img src="photo64.jpg" alt="Photo 64"></a>
+    <a href="photo65.jpg" data-lightbox="gallery" data-title="Photo 65"><img src="photo65.jpg" alt="Photo 65"></a>
+    <a href="photo66.jpg" data-lightbox="gallery" data-title="Photo 66"><img src="photo66.jpg" alt="Photo 66"></a>
+    <a href="photo67.jpg" data-lightbox="gallery" data-title="Photo 67"><img src="photo67.jpg" alt="Photo 67"></a>
+    <a href="photo68.jpg" data-lightbox="gallery" data-title="Photo 68"><img src="photo68.jpg" alt="Photo 68"></a>
+    <a href="photo69.jpg" data-lightbox="gallery" data-title="Photo 69"><img src="photo69.jpg" alt="Photo 69"></a>
+    <a href="photo70.jpg" data-lightbox="gallery" data-title="Photo 70"><img src="photo70.jpg" alt="Photo 70"></a>
+    <a href="photo71.jpg" data-lightbox="gallery" data-title="Photo 71"><img src="photo71.jpg" alt="Photo 71"></a>
+    <a href="photo72.jpg" data-lightbox="gallery" data-title="Photo 72"><img src="photo72.jpg" alt="Photo 72"></a>
+    <a href="photo73.jpg" data-lightbox="gallery" data-title="Photo 73"><img src="photo73.jpg" alt="Photo 73"></a>
+    <a href="photo74.jpeg" data-lightbox="gallery" data-title="Photo 74"><img src="photo74.jpeg" alt="Photo 74"></a>
+    <a href="photo75.jpg" data-lightbox="gallery" data-title="Photo 75"><img src="photo75.jpg" alt="Photo 75"></a>
+  </div>
+</section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <a href="mailto:pedrozo.jag@gmail.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/gmail.png" alt="Gmail Icon"> pedrozo.jag@gmail.com
+      </a>
+      <a href="tel:+639666126962" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon"> 09666126962
+      </a>
+      <a href="https://www.facebook.com/share/19BZoZF9Sv/?mibextid=wwXIfr" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook Icon"> My Facebook
+      </a>
+      <a href="https://www.instagram.com/antthnyy__/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram Icon"> @antthnyy__
+      </a>
+    </section>
+
+    <section id="cv">
+      <h2 style="text-align: center;">Curriculum Vitae</h2>
+      <p style="text-align: center;">
+        <a href="JohnAnthony_CV.pdf" target="_blank" style="color: white; background-color: #00aced; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+          📄 View My Curriculum Vitae
+        </a>
+      </p>
+    </section>
+
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
