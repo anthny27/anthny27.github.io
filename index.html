@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Anthonyy's Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('photo79.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #00aced;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.4em;
+      margin-bottom: 40px;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    section {
+      margin: 30px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Hi! Welcome to Anthonyy's Page</h1>
+    <p class="intro-text">Explore my world, discover my journey, and get to know who I am.</p>
+
+    <nav>
+      <a href="motto.html">Motto</a>
+      <a href="goals.html">Goals</a>
+      <a href="music.html">Music</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is <strong>John Anthony Pedrozo</strong>. I'm 21 years old and from Baguio City. I have a lifelong goal of serving my country as a soldier in the army. I believe in discipline, dedication, and making a difference in my nation.</p>
+    </section>
+
+    <section id="bio">
+      <h2>Bio</h2>
+      <p>I love capturing random moments, especially the beauty of nature through my lens. I also enjoy taking photos of cars, particularly vintage and old-school JDM models. Photography is my way of freezing time and expressing creativity.</p>
+    </section>
+  </div>
+</body>
+</html>
