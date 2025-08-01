@@ -11,9 +11,34 @@
       color: #fff;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
+    .container {
+      display: flex;
       min-height: 100vh;
+    }
+
+    .side-nav {
+      width: 220px;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-nav a {
+      color: #00aced;
+      text-decoration: none;
+      margin: 12px 0;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    .side-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .overlay {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 40px 20px;
     }
 
@@ -40,26 +65,26 @@
     .photo-gallery img:hover {
       transform: scale(1.05);
     }
-
-    .back-link {
-      display: block;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .back-link a {
-      color: #00aced;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    .back-link a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
+  <div class="container">
+    
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html">👤 About Me</a>
+      <a href="motto.html">💬 Motto</a>
+      <a href="goals.html">🎯 Goals</a>
+      <a href="music.html">🎵 Music</a>
+      <a href="photos.html">🖼️ Photos</a>
+      <a href="cv.html">📄 CV</a>
+      <a href="experience.html">💼 Experience</a>
+      <a href="application.html">📨 Application</a>
+      <a href="hobbies.html">🏀 Hobbies</a>
+      <a href="contact.html">📱 Contact</a>
+    </nav>
+   
   <div class="overlay">
     <h1>My Photo Gallery</h1>
     <div class="photo-gallery">
@@ -108,10 +133,7 @@
     <a href="photo55.jpeg" data-lightbox="gallery" data-title="Photo 55"><img src="photo55.jpeg" alt="Photo 55"></a>
     <a href="photo58.jpeg" data-lightbox="gallery" data-title="Photo 
   </div>
-</section>
 
-    <div class="back-link">
-      <a href="index.html">← Back to Home</a>
     </div>
   </div>
 </body>
